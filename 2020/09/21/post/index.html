@@ -9,7 +9,7 @@
     
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>
-    ds_linear |  
+    二分查找的细节和边界问题 |  
   </title>
   <meta name="generator" content="hexo-theme-ayer">
   
@@ -45,7 +45,7 @@
     <main class="content on">
       <section class="outer">
   <article
-  id="post-ds-linear"
+  id="post-post"
   class="article article-type-post"
   itemscope
   itemprop="blogPost"
@@ -56,22 +56,22 @@
     <header class="article-header">
        
 <h1 class="article-title sea-center" style="border-left:0" itemprop="name">
-  ds_linear
+  二分查找的细节和边界问题
 </h1>
  
 
     </header>
      
     <div class="article-meta">
-      <a href="/2020/09/09/ds-linear/" class="article-date">
-  <time datetime="2020-09-09T18:24:44.000Z" itemprop="datePublished">2020-09-09</time>
+      <a href="/2020/09/21/post/" class="article-date">
+  <time datetime="2020-09-20T22:16:44.000Z" itemprop="datePublished">2020-09-21</time>
 </a>   
 <div class="word_count">
     <span class="post-time">
         <span class="post-meta-item-icon">
             <i class="ri-quill-pen-line"></i>
             <span class="post-meta-item-text"> Word count:</span>
-            <span class="post-count">0</span>
+            <span class="post-count">1.1k</span>
         </span>
     </span>
 
@@ -80,20 +80,46 @@
         <span class="post-meta-item-icon">
             <i class="ri-book-open-line"></i>
             <span class="post-meta-item-text"> Reading time≈</span>
-            <span class="post-count">1 min</span>
+            <span class="post-count">4 min</span>
         </span>
     </span>
 </div>
  
     </div>
       
+    <div class="tocbot"></div>
+
 
 
 
   
     <div class="article-entry" itemprop="articleBody">
        
-   
+  <h3 id="关于二分查找的细节和边界问题"><a href="#关于二分查找的细节和边界问题" class="headerlink" title="关于二分查找的细节和边界问题"></a>关于二分查找的细节和边界问题</h3><p>旨在试图弄清二分实现过程中tricky的细节。</p>
+<h5 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h5><p>有序数组，查找返回单个值。<br>可以修改二分以适应于其他场景：查找重复出现的元素，查找第k小，查找多次出现元素的上下界（34）。</p>
+<ul>
+<li>时间复杂度O(logn)？<br>最好情况O(1)，最差情况O(logn)，平均情况也是O(logn)。<br>设总共有n个元素，花费x次折半查找直到找到。<br>最差情况：$n*(1/2)^x = 1 \rightarrow 2^x = n  \rightarrow x=log_2{n}$, 实际查找中需要花费$\lceil \log_2{n}+1 \rceil$, 只有1个元素时也需要花费一次）</li>
+</ul>
+<p><strong>题外话：关于O(logn)</strong><br>O(logn)在算法分析中非常常见，为什么？推测是因为分治思想的运用，将问题不停地细分到直至最小解决条件（log order）。从对数最基本的数学意义出发，对数是指数的反函数。</p>
+<blockquote>
+<p>O(log N)基本上意味着时间线性增长，而n指数增长。<br>如果花一1秒钟来计算10元素，那么要花2几秒钟来计算100元素，要花几3秒钟来计算1000元素，依此类推。</p>
+</blockquote>
+<p>例如在快排中，我们每次都需要花费O(n)取出一个pivot且将数组分为两部分，总共花费logn次，因此总的时间上限为O（nlogn）。类推到二叉树的检索上，如果我们用的是随机快排（RandQS）生成的二叉树，则包含n个结点的二叉树的期望深度是logn。<br>二分查找不是一种严格意义上的分治策略，因为我们将问题划分后，并没有再将子问题的解合并（不断缩小问题规模舍弃区间），但两者背后的思想是有相似之处的。<br>在二分查找中，我们用2为底数；如果三分，则会以3为底数，以此类推。需要注意到其后的渐进（asymptotic）意义，$n \geq n_0$， 当n足够大时，无论该对数取什么底数也都无关紧要了（不同底数的对数函数的极限间仅具有常数差别）。</p>
+<h5 id="mid"><a href="#mid" class="headerlink" title="mid"></a>mid</h5><p>注意到在取出表中的中位数<code>mid</code>时：<br>+奇 <code> len(L)=odd</code> : <code>mid = L//2</code><br>+偶 <code>len(L)=even</code> ：<code>L_mid = L[L//2] + L[L//2 - 1]</code><br>如果长度为偶数（从0开始），<code>L//2</code>会得到下中位数。<br>如果left和right较大，则计算 mid 时需要技巧防止上溢（主要出现在C++/JAVA， python不存在这个问题），建议写成: <br><code>mid = left + (right - left) / 2</code></p>
+<h4 id="边界问题"><a href="#边界问题" class="headerlink" title="边界问题"></a>边界问题</h4><h5 id="左闭右开区间"><a href="#左闭右开区间" class="headerlink" title="左闭右开区间"></a>左闭右开区间</h5><p>一个列表<code>list</code>在python中下标由<code>0</code>开始，<code>len(L)-1</code>结束，“相当于”一个<u>左闭右开</u>区间。<br>其实相比于使用左闭右闭区间，使用左闭右开区间是一件更自然的事。<br>(Dijkstra 1982年)</p>
+<blockquote>
+<p>上下界之差等于元素的数量<br>易于表示两个相邻子序列，一个子序列的上界就是另一个子序列的下界<br>序列从零（最小自然数）开始计数时，下界的下标不是 -1（非自然数）<br>表达空集时，不会使得上界小于下界</p>
+</blockquote>
+<h5 id="循环不变量"><a href="#循环不变量" class="headerlink" title="循环不变量"></a>循环不变量</h5><p>刚开始看到了很多分类模板，眼花缭乱，但其实二分容易出错就在于边界问题的模糊导致的<a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/Off-by-one_error">off-by-one error</a>。但无论场景怎么变换，最需要关注的是<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E5%BE%AA%E7%8E%AF%E4%B8%8D%E5%8F%98%E9%87%8F">循环的不变量</a>。使用循环不变量来帮助理解算法的正确性并进行设计，其满足以下特性：（CRLS chap2）</p>
+<ul>
+<li>Initialization: The loop invariant must be true before the first execution of the loop.</li>
+<li>Maintenance: If the invariant is true before an iteration of the loop, it should be true also after the iteration.</li>
+<li>Termination: When the loop is terminated the invariant should tell us something useful, something that helps us understand the algorithm.</li>
+</ul>
+<p>相关例子：<br><a target="_blank" rel="noopener" href="https://yourbasic.org/algorithms/loop-invariants-explained/">https://yourbasic.org/algorithms/loop-invariants-explained/</a></p>
+<p>一个必然不出错的模板（转自知乎）<a target="_blank" rel="noopener" href="https://www.zhihu.com/question/36132386">https://www.zhihu.com/question/36132386</a></p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">### 求非降序范围[first, last)内第一个不小于val的值的位置</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">lower_bound</span>(<span class="params">array, first, last, val</span>):</span>  <span class="comment"># 求下界（闭）</span></span><br><span class="line">    <span class="keyword">while</span> first &lt; last:  <span class="comment"># 搜索区间[first, last) 不为空</span></span><br><span class="line">        mid = (first + last)//<span class="number">2</span></span><br><span class="line">        <span class="keyword">if</span> array[mid] &lt; val:  <span class="comment"># 改成小于等于则得到上界（开）</span></span><br><span class="line">            first = mid + <span class="number">1</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            last = mid</span><br><span class="line">    <span class="keyword">return</span> first  <span class="comment"># last 也行，搜索区间为空时两者重合</span></span><br></pre></td></tr></table></figure>
+ 
       <!-- reward -->
       
     </div>
@@ -155,30 +181,23 @@
     <a class="modal-close" href="javascript:;"><i class="ri-close-circle-line"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://yoursite.com/2020/09/09/ds-linear/" alt="微信分享二维码">
+      <img src="//api.qrserver.com/v1/create-qr-code/?size=150x150&data=http://yoursite.com/2020/09/21/post/" alt="微信分享二维码">
     </div>
 </div>
 
 <div id="share-mask"></div>  
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/" rel="tag">数据结构</a></li></ul>
+
     </footer>
   </div>
 
    
   <nav class="article-nav">
     
-      <a href="/2020/09/09/ds-graph/" class="article-nav-link">
-        <strong class="article-nav-caption">上一篇</strong>
-        <div class="article-nav-title">
-          
-            ds_graph
-          
-        </div>
-      </a>
     
-    
-      <a href="/2020/09/09/BWT/" class="article-nav-link">
+      <a href="/2020/09/09/EM-Algorithm/" class="article-nav-link">
         <strong class="article-nav-caption">下一篇</strong>
-        <div class="article-nav-title">BWT</div>
+        <div class="article-nav-title">EM Algorithm</div>
       </a>
     
   </nav>

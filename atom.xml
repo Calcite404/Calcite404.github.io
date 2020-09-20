@@ -6,7 +6,7 @@
   <link href="http://yoursite.com/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-09-09T18:25:06.594Z</updated>
+  <updated>2020-09-20T22:17:36.147Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,67 +17,25 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>ds_tree</title>
-    <link href="http://yoursite.com/2020/09/09/ds-tree/"/>
-    <id>http://yoursite.com/2020/09/09/ds-tree/</id>
-    <published>2020-09-09T18:25:06.000Z</published>
-    <updated>2020-09-09T18:25:06.594Z</updated>
+    <title>二分查找的细节和边界问题</title>
+    <link href="http://yoursite.com/2020/09/21/post/"/>
+    <id>http://yoursite.com/2020/09/21/post/</id>
+    <published>2020-09-20T22:16:44.000Z</published>
+    <updated>2020-09-20T22:17:36.147Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;关于二分查找的细节和边界问题&quot;&gt;&lt;a href=&quot;#关于二分查找的细节和边界问题&quot; class=&quot;headerlink&quot;</summary>
+        
+      
     
     
     
     
-    
-  </entry>
-  
-  <entry>
-    <title>ds_graph</title>
-    <link href="http://yoursite.com/2020/09/09/ds-graph/"/>
-    <id>http://yoursite.com/2020/09/09/ds-graph/</id>
-    <published>2020-09-09T18:24:54.000Z</published>
-    <updated>2020-09-09T18:24:54.629Z</updated>
-    
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>ds_linear</title>
-    <link href="http://yoursite.com/2020/09/09/ds-linear/"/>
-    <id>http://yoursite.com/2020/09/09/ds-linear/</id>
-    <published>2020-09-09T18:24:44.000Z</published>
-    <updated>2020-09-09T18:24:44.897Z</updated>
-    
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>BWT</title>
-    <link href="http://yoursite.com/2020/09/09/BWT/"/>
-    <id>http://yoursite.com/2020/09/09/BWT/</id>
-    <published>2020-09-09T18:24:21.000Z</published>
-    <updated>2020-09-09T18:24:21.459Z</updated>
-    
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Linear Programming</title>
-    <link href="http://yoursite.com/2020/09/09/Linear-Programming/"/>
-    <id>http://yoursite.com/2020/09/09/Linear-Programming/</id>
-    <published>2020-09-09T18:23:56.000Z</published>
-    <updated>2020-09-09T18:23:56.568Z</updated>
-    
-    
-    
-    
+    <category term="数据结构" scheme="http://yoursite.com/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
     
   </entry>
   
@@ -86,24 +44,13 @@
     <link href="http://yoursite.com/2020/09/09/EM-Algorithm/"/>
     <id>http://yoursite.com/2020/09/09/EM-Algorithm/</id>
     <published>2020-09-09T18:23:41.000Z</published>
-    <updated>2020-09-09T18:23:41.205Z</updated>
+    <updated>2020-09-12T22:37:53.105Z</updated>
     
     
     
     
     
-  </entry>
-  
-  <entry>
-    <title>Max Flow</title>
-    <link href="http://yoursite.com/2020/09/09/Max-Flow/"/>
-    <id>http://yoursite.com/2020/09/09/Max-Flow/</id>
-    <published>2020-09-09T18:23:20.000Z</published>
-    <updated>2020-09-09T18:23:20.119Z</updated>
-    
-    
-    
-    
+    <category term="机器学习，EM， 贝叶斯" scheme="http://yoursite.com/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%EF%BC%8CEM%EF%BC%8C-%E8%B4%9D%E5%8F%B6%E6%96%AF/"/>
     
   </entry>
   
