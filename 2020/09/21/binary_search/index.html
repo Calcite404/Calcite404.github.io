@@ -98,7 +98,7 @@
   <h3 id="关于二分查找的细节和边界问题"><a href="#关于二分查找的细节和边界问题" class="headerlink" title="关于二分查找的细节和边界问题"></a>关于二分查找的细节和边界问题</h3><p>旨在试图弄清二分实现过程中tricky的细节。</p>
 <h5 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h5><p>有序数组，查找返回单个值。<br>可以修改最基本的二分以适应于其他场景：查找重复出现的元素，查找第k小，查找多次出现元素的上下界。</p>
 <ul>
-<li>时间复杂度O(logn)？<br>最好情况O(1)，最差情况O(logn)，平均情况也是O(logn)。<br>设总共有n个元素，花费x次折半查找直到找到。<br>最差情况：$n*(1/2)^x = 1 \rightarrow 2^x = n  \rightarrow x=log_2{n}$, 实际查找中需要花费$\lceil \log_2{n}+1 \rceil$, 只有1个元素时也需要花费一次）</li>
+<li>时间复杂度O(logn)？<br>最好情况O(1)，最差情况O(logn)，平均情况也是O(logn)。<br>设总共有n个元素，花费x次折半查找直到找到。<br>最差情况：$n*(1/2)^x = 1 \rightarrow 2^x = n  \rightarrow x=log_2{n}$, 实际查找中需要花费$\lceil \log_2{n}\rceil +1 $, 只有1个元素时也需要花费一次）</li>
 </ul>
 <p><strong>题外话：关于O(logn)</strong><br>O(logn)在算法分析中非常常见，为什么？推测是因为分治思想的运用，将问题不停地细分到直至最小解决条件（log order）。从对数最基本的数学意义出发，对数是指数的反函数。</p>
 <blockquote>
