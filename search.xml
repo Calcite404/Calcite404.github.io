@@ -1,16 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>EM Algorithm</title>
-    <url>/2020/09/09/EM-Algorithm/</url>
-    <content><![CDATA[]]></content>
-      <tags>
-        <tag>机器学习，EM， 贝叶斯</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>二分查找的细节和边界问题</title>
-    <url>/2020/09/21/post/</url>
+    <url>/2020/09/21/binary_search/</url>
     <content><![CDATA[<h3 id="关于二分查找的细节和边界问题"><a href="#关于二分查找的细节和边界问题" class="headerlink" title="关于二分查找的细节和边界问题"></a>关于二分查找的细节和边界问题</h3><p>旨在试图弄清二分实现过程中tricky的细节。</p>
 <h5 id="应用场景"><a href="#应用场景" class="headerlink" title="应用场景"></a>应用场景</h5><p>有序数组，查找返回单个值。<br>可以修改二分以适应于其他场景：查找重复出现的元素，查找第k小，查找多次出现元素的上下界（34）。</p>
 <ul>

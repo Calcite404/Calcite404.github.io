@@ -18,8 +18,8 @@
   
   <entry>
     <title>二分查找的细节和边界问题</title>
-    <link href="http://yoursite.com/2020/09/21/post/"/>
-    <id>http://yoursite.com/2020/09/21/post/</id>
+    <link href="http://yoursite.com/2020/09/21/binary_search/"/>
+    <id>http://yoursite.com/2020/09/21/binary_search/</id>
     <published>2020-09-20T22:16:44.000Z</published>
     <updated>2020-09-20T22:17:36.147Z</updated>
     
@@ -36,21 +36,6 @@
     
     
     <category term="数据结构" scheme="http://yoursite.com/tags/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>EM Algorithm</title>
-    <link href="http://yoursite.com/2020/09/09/EM-Algorithm/"/>
-    <id>http://yoursite.com/2020/09/09/EM-Algorithm/</id>
-    <published>2020-09-09T18:23:41.000Z</published>
-    <updated>2020-09-12T22:37:53.105Z</updated>
-    
-    
-    
-    
-    
-    <category term="机器学习，EM， 贝叶斯" scheme="http://yoursite.com/tags/%E6%9C%BA%E5%99%A8%E5%AD%A6%E4%B9%A0%EF%BC%8CEM%EF%BC%8C-%E8%B4%9D%E5%8F%B6%E6%96%AF/"/>
     
   </entry>
   
