@@ -6,7 +6,7 @@
   <link href="http://yoursite.com/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-09-20T22:27:42.264Z</updated>
+  <updated>2020-11-20T00:16:54.650Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,39 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>jjc笔记</title>
+    <link href="http://yoursite.com/2020/11/20/jjc%E7%AC%94%E8%AE%B0/"/>
+    <id>http://yoursite.com/2020/11/20/jjc%E7%AC%94%E8%AE%B0/</id>
+    <published>2020-11-19T23:42:26.000Z</published>
+    <updated>2020-11-20T00:16:54.650Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;strong&gt;奉天证道版本个人散排笔记&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;因为自闭，所以散排&lt;/p&gt;
+&lt;p&gt;奶花&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;有无厥阴，星移&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;奶秀&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;有无封内，飞萍（概率极低&lt;/li&gt;
+&lt;/</summary>
+        
+      
+    
+    
+    
+    
+    <category term="game" scheme="http://yoursite.com/tags/game/"/>
+    
+  </entry>
   
   <entry>
     <title>二分查找的细节和边界问题</title>
