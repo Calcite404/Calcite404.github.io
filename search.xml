@@ -133,4 +133,19 @@
         <tag>game</tag>
       </tags>
   </entry>
+  <entry>
+    <title>note1</title>
+    <url>/2021/01/23/note1/</url>
+    <content><![CDATA[<ul>
+<li><p>创建文档:  hexo new ‘’FILE_NAME“</p>
+</li>
+<li><p>发布文章：</p>
+<p>hexo clean</p>
+<p>hexo g   # generate</p>
+<p>hexo d # display</p>
+</li>
+<li></li>
+</ul>
+]]></content>
+  </entry>
 </search>

@@ -6,7 +6,7 @@
   <link href="http://yoursite.com/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-11-20T00:16:54.650Z</updated>
+  <updated>2021-01-23T21:43:59.762Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>note1</title>
+    <link href="http://yoursite.com/2021/01/23/note1/"/>
+    <id>http://yoursite.com/2021/01/23/note1/</id>
+    <published>2021-01-23T20:48:38.000Z</published>
+    <updated>2021-01-23T21:43:59.762Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;创建文档:  hexo new ‘’FILE_NAME“&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;发布文章：&lt;/p&gt;
+&lt;p&gt;hexo clean&lt;/p&gt;
+&lt;p&gt;hexo g   # generate&lt;/p&gt;
+&lt;p&gt;hexo d #</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>jjc笔记</title>
