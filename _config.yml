@@ -37,7 +37,7 @@ social:
   links:
     - https://calcite404.github.io/
 google_site_verification: xxxxx
-lang: en
+#lang: en
 
 sass:
   sass_dir: _sass
