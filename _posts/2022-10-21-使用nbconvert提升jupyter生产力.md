@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 20221021-使用nbconvert提升jupyter生产力
+title: 使用nbconvert提升jupyter生产力
 toc:  true
 date: 2022-10-21 15:46 +0800
 tags: [jupyter, nbconvert, notebook]
@@ -26,7 +26,6 @@ jupyter nbconvert --to <Format> <notebook1.ipynb> <notebook2.ipynb>
 -   为需要转换成的格式，可选的有`html`, `latex`, `pdf`, `slides`, `markdown`, `rst`, `script`, `notebook`
 
 ### Reference: How to improve jupyter notebook expansibility
-+ [This blog post was written in a Jupyter Notebook | Scott Condron’s Blog](https://www.scottcondron.com/jupyter/blogging/visualisation/2020/01/20/this-blog-post-was-written-in-a-jupyter-notebooks.html)
 + [Quarto - Tutorial: Hello, Quarto](https://quarto.org/docs/get-started/hello/jupyter.html)
 + [Site Unreachable](https://nbdev.fast.ai/tutorials/tutorial.html)
 + [pandoc · PyPI](https://pypi.org/project/pandoc/)
