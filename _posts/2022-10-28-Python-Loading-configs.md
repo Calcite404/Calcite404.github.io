@@ -37,7 +37,7 @@ marker_types = {Tcell: [Human-CD3, Human-CD4], Bcell: [Human-CD19], Macrophages:
 
 + return elements in a list that contains blank, quotation mark, line break and other special characters
 
-!(/assets/collections/20221028112920.png)
+![config example](/assets/collections/20221028112920.png)
 
 ### Solution
 #### 1. `configparser`
@@ -68,7 +68,7 @@ def getConfig(filename, section, option, dtype=None):
 ```
 
 ##### Reference
-+ [3 Ways to Convert String to Dictionary in Python | FavTutor](https://favtutor.com/blogs/string-to-dict-python)
++ [https://favtutor.com/blogs/string-to-dict-python]
 + [configparser --- 配置文件解析器 — Python 3.10.8 文档](https://docs.python.org/zh-cn/3.10/library/configparser.html)
 + [python - Lists in ConfigParser - Stack Overflow](https://stackoverflow.com/questions/335695/lists-in-configparser)
 
@@ -76,7 +76,7 @@ def getConfig(filename, section, option, dtype=None):
 
 Here list an example from `pyyaml` document to show its organization way.
 A block mapping may be nested in a block sequence:
-+ yaml
+
 ```
 # YAML
 - name: PyYAML
@@ -88,12 +88,14 @@ A block mapping may be nested in a block sequence:
   license: BSD
   language: Python
 ```
+
 + read-in by python
 ```
 # Python
 [{'status': 4, 'language': 'Python', 'name': 'PyYAML', 'license': 'MIT'},
 {'status': 5, 'license': 'BSD', 'name': 'PySyck', 'language': 'Python'}]
 ```
+
 + code-usage
 ``` python
 import yaml
@@ -104,4 +106,4 @@ with open("./config/config.yaml", 'r') as stream:
 ##### Reference
 + [https://pyyaml.org/wiki/PyYAMLDocumentation](https://pyyaml.org/wiki/PyYAMLDocumentation)
 + [https://www.jianshu.com/p/eaa1bf01b3a6](https://www.jianshu.com/p/eaa1bf01b3a6)
-+ https://dreamhomes.top/posts/202104251804/
++ [https://dreamhomes.top/posts/202104251804/]
