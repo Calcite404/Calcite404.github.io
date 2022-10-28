@@ -41,7 +41,7 @@ marker_types = {Tcell: [Human-CD3, Human-CD4], Bcell: [Human-CD19], Macrophages:
 
 ### Solution
 #### 1. `configparser`
-This is my personal not so 'elegant' solution.
+This is my personal not so "elegant" solution.
 
 + For `bool` dtype, using `.getboolean()` method
 + For `list` dtype, transformation using `.split()` and `.strip()`
@@ -104,4 +104,4 @@ with open("./config/config.yaml", 'r') as stream:
 ##### Reference
 + [https://pyyaml.org/wiki/PyYAMLDocumentation](https://pyyaml.org/wiki/PyYAMLDocumentation)
 + [https://www.jianshu.com/p/eaa1bf01b3a6](https://www.jianshu.com/p/eaa1bf01b3a6)
-+ [Python YAML 配置文件 | 梦家博客](https://dreamhomes.top/posts/202104251804/)
++ https://dreamhomes.top/posts/202104251804/
