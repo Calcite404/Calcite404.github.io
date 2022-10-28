@@ -1,15 +1,10 @@
 ---
 
 layout: post
-
 title: Python Cooknotes 01 - reading configs from a file
-
 toc: true
-
 date: 2022-10-28
-
-author: [python, config, yaml]
-
+tags: [python, config, yaml]
 ---
 
 
@@ -68,7 +63,7 @@ def getConfig(filename, section, option, dtype=None):
 ```
 
 ##### Reference
-+ [https://favtutor.com/blogs/string-to-dict-python]
++ [https://favtutor.com/blogs/string-to-dict-python](https://favtutor.com/blogs/string-to-dict-python)
 + [configparser --- 配置文件解析器 — Python 3.10.8 文档](https://docs.python.org/zh-cn/3.10/library/configparser.html)
 + [python - Lists in ConfigParser - Stack Overflow](https://stackoverflow.com/questions/335695/lists-in-configparser)
 
@@ -106,4 +101,4 @@ with open("./config/config.yaml", 'r') as stream:
 ##### Reference
 + [https://pyyaml.org/wiki/PyYAMLDocumentation](https://pyyaml.org/wiki/PyYAMLDocumentation)
 + [https://www.jianshu.com/p/eaa1bf01b3a6](https://www.jianshu.com/p/eaa1bf01b3a6)
-+ [https://dreamhomes.top/posts/202104251804/]
++ [https://dreamhomes.top/posts/202104251804/](https://dreamhomes.top/posts/202104251804/)

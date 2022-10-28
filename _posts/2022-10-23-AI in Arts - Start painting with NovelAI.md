@@ -1,15 +1,9 @@
 ---
-
 layout: post
-
 title: AI in Arts - Start painting with NovelAI
-
 toc: true
-
 date: 2022-10-23
-
-author: [NovelAI, paint]
-
+tags: [NovelAI, paint]
 ---
 [NovelAI - The GPT-powered AI Storyteller](https://novelai.net/)
 
@@ -55,10 +49,10 @@ python -m pip install -r requirements.txt
 
 #### Parameter tuning
 + [如何评价AI绘画网站NovelAI？ - 知乎](https://www.zhihu.com/question/558019952/answers/updated)
-+ [https://zhuanlan.zhihu.com/p/572865961]
++ [https://zhuanlan.zhihu.com/p/572865961](https://zhuanlan.zhihu.com/p/572865961)
 
 #### Reference
-+ [https://blog.novelai.net/image-generation-announcement-807b3cf0afec]
++ [https://blog.novelai.net/image-generation-announcement-807b3cf0afec](https://blog.novelai.net/image-generation-announcement-807b3cf0afec)
 + [Image Generation - NovelAI Documentation](https://docs.novelai.net/)
 + [Paint New Image - Edit Image - Canvas - NovelAI Documentation](https://docs.novelai.net/image/editimagecanvas.html#canvas--paint-new-image--edit-image)
 + [Novel AI搭建教程 - 哔哩哔哩](https://www.bilibili.com/read/cv19122535)
