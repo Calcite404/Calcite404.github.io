@@ -37,7 +37,7 @@ marker_types = {Tcell: [Human-CD3, Human-CD4], Bcell: [Human-CD19], Macrophages:
 
 + return elements in a list that contains blank, quotation mark, line break and other special characters
 
-![[20221028112920.png]]
+!(/assets/collections/20221028112920.png)
 
 ### Solution
 #### 1. `configparser`

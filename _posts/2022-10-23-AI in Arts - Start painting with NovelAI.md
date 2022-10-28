@@ -40,7 +40,8 @@ git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git novelai
 ```
 conda install pytorch torchvision torchaudio cudatoolkit=11.6 -c pytorch -c conda-forge
 ```
-![[20221022170630.png]]
+
+!(/assets/collections/20221022170630.png)
 
 + dependency
 `cd` to the project root path
