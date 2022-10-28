@@ -2,7 +2,7 @@
 
 layout: post
 
-title: Python Cooknotes 01 - reading configs from a file
+title: AI in Arts - Start painting with NovelAI
 
 toc: true
 
@@ -40,7 +40,7 @@ git clone https://github.com/AUTOMATIC1111/stable-diffusion-webui.git novelai
 ```
 conda install pytorch torchvision torchaudio cudatoolkit=11.6 -c pytorch -c conda-forge
 ```
-![[Pasted image 20221022170630.png]]
+![[20221022170630.png]]
 
 + dependency
 `cd` to the project root path
@@ -54,14 +54,12 @@ python -m pip install -r requirements.txt
 
 #### Parameter tuning
 + [如何评价AI绘画网站NovelAI？ - 知乎](https://www.zhihu.com/question/558019952/answers/updated)
-
-+ [【NovelAI|Stable Diffusion】AI绘画调参搞出帅哥技巧【铜仁女狂喜】 - 知乎](https://zhuanlan.zhihu.com/p/572865961)
++ https://zhuanlan.zhihu.com/p/572865961
 
 #### Reference
 + [Image Generation has arrived, NovelAI Diffusion is here! | Medium](https://blog.novelai.net/image-generation-announcement-807b3cf0afec)
-+ NovelAI documentation
 + [Image Generation - NovelAI Documentation](https://docs.novelai.net/)
 + [Paint New Image - Edit Image - Canvas - NovelAI Documentation](https://docs.novelai.net/image/editimagecanvas.html#canvas--paint-new-image--edit-image)
 + [Novel AI搭建教程 - 哔哩哔哩](https://www.bilibili.com/read/cv19122535)
 + [【AI绘画】再次进化！novelai真官网版本解压即用 无需下载！这次1分钟内不用学也能会用_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1EV4y1L7dX/?vd_source=24df2e6861e218f2143199245603cf0c)
-+ [AI 杀疯了，NovelAI开源教程_Jack-Cui的博客-CSDN博客_csnd](https://blog.csdn.net/c406495762/article/details/127419474)](https://dreamhomes.top/posts/202104251804/)
++ https://blog.csdn.net/c406495762/article/details/127419474)](https://dreamhomes.top/posts/202104251804/
