@@ -2,9 +2,9 @@
 
 layout: post
 
-title: Python Cooknotes 01 - reading configs from files
+title: Python Cooknotes 01 - reading configs from a file
 
-toc:  true
+toc: true
 
 date: 2022-10-28
 
@@ -31,18 +31,22 @@ marker_types = {Tcell: [Human-CD3, Human-CD4], Bcell: [Human-CD19], Macrophages:
 
 ```
 
-Since `configparser` always return `str` object, this results in may potential issues should be considered:
+, since `configparser` always return `str` object, this results in may potential issues should be considered:
 
 + `bool(`False`)` return `True`
 
-+ return elements in a list that contains blank" ", quotation mark, line break "\n"and other special character
-![[Pasted image 20221028112920.png]]
++ return elements in a list that contains blank, quotation mark, line break and other special characters
+
+![[20221028112920.png]]
 
 ### Solution
 #### 1. `configparser`
-+ For `bool` dtype, using `.getboolean()`` method
+This is my personal not so 'elegant' solution.
+
++ For `bool` dtype, using `.getboolean()` method
 + For `list` dtype, transformation using `.split()` and `.strip()`
 + For `dict` dtype, using internal `ast` library
+
 ``` python
 def getConfig(filename, section, option, dtype=None):
     import ast
@@ -64,13 +68,13 @@ def getConfig(filename, section, option, dtype=None):
 ```
 
 ##### Reference
-[3 Ways to Convert String to Dictionary in Python | FavTutor](https://favtutor.com/blogs/string-to-dict-python)
-[configparser --- 配置文件解析器 — Python 3.10.8 文档](https://docs.python.org/zh-cn/3.10/library/configparser.html)
-[python - Lists in ConfigParser - Stack Overflow](https://stackoverflow.com/questions/335695/lists-in-configparser)
++ [3 Ways to Convert String to Dictionary in Python | FavTutor](https://favtutor.com/blogs/string-to-dict-python)
++ [configparser --- 配置文件解析器 — Python 3.10.8 文档](https://docs.python.org/zh-cn/3.10/library/configparser.html)
++ [python - Lists in ConfigParser - Stack Overflow](https://stackoverflow.com/questions/335695/lists-in-configparser)
 
 #### 2. `yaml`
 
-Here list an example from `pyyaml` document to show its organization way: 
+Here list an example from `pyyaml` document to show its organization way.
 A block mapping may be nested in a block sequence:
 + yaml
 ```
@@ -84,7 +88,7 @@ A block mapping may be nested in a block sequence:
   license: BSD
   language: Python
 ```
-+ read-in
++ read-in by python
 ```
 # Python
 [{'status': 4, 'language': 'Python', 'name': 'PyYAML', 'license': 'MIT'},
@@ -98,6 +102,6 @@ with open("./config/config.yaml", 'r') as stream:
 ```
 
 ##### Reference
-[https://pyyaml.org/wiki/PyYAMLDocumentation](https://pyyaml.org/wiki/PyYAMLDocumentation)
-[https://www.jianshu.com/p/eaa1bf01b3a6](https://www.jianshu.com/p/eaa1bf01b3a6)
-[Python YAML 配置文件 | 梦家博客](https://dreamhomes.top/posts/202104251804/)
++ [https://pyyaml.org/wiki/PyYAMLDocumentation](https://pyyaml.org/wiki/PyYAMLDocumentation)
++ [https://www.jianshu.com/p/eaa1bf01b3a6](https://www.jianshu.com/p/eaa1bf01b3a6)
++ [Python YAML 配置文件 | 梦家博客](https://dreamhomes.top/posts/202104251804/)
