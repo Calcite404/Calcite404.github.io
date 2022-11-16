@@ -26,9 +26,9 @@ marker_types = {Tcell: [Human-CD3, Human-CD4], Bcell: [Human-CD19], Macrophages:
 
 ```
 
-, since `configparser` always return `str` object, this results in may potential issues should be considered:
+, since `configparser` always return `str` object, this may results in potential issues should be considered:
 
-+ `bool(`False`)` return `True`
++ `bool(False)` return `True`
 
 + return elements in a list that contains blank, quotation mark, line break and other special characters
 
